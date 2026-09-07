@@ -1,0 +1,17 @@
+task_description: "y1 pick and place"
+num_episodes: 60
+save_rate: 30
+
+hdf5_cfg:
+  dataset_dir: "data/"
+  task_name: "y1_place_and_place_0729"
+
+robotic_arm_cfg:
+  collection_type: "one_master_slave"
+  master_arm_right_topic: "/master_arm_right/joint_states"
+  puppet_arm_right_topic: "/puppet_arm_right/joint_states"
+
+camera_cfg:
+  camera_names: ["cam_right_wrist", "cam_high"]
+  img_right_topic: "/camera_right/color/image_raw"
+  img_high_topic: "/camera_high/color/image_raw"

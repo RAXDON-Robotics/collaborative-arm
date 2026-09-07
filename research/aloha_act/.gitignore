@@ -1,0 +1,5 @@
+__pycache__
+detr/detr.egg-info/
+
+output/
+figure.png

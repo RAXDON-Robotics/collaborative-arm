@@ -1,0 +1,12 @@
+devel/
+build/
+install/
+.cache/
+.vscode/
+.catkin_workspace
+src/CMakeLists.txt
+
+log/*
+src/y1_controller/log/*
+data/*
+*bag

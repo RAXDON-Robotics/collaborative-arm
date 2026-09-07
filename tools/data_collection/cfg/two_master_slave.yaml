@@ -1,0 +1,20 @@
+task_description: "pick and place"
+num_episodes: 100
+save_rate: 30
+
+hdf5_cfg:
+  dataset_dir: "data/"
+  task_name: "two_arm_teleop"
+
+robotic_arm_cfg:
+  collection_type: "two_master_slave"
+  master_arm_right_topic: "/master_arm_right/joint_states"
+  puppet_arm_right_topic: "/puppet_arm_right/joint_states"
+  master_arm_left_topic: "/master_arm_left/joint_states"
+  puppet_arm_left_topic: "/puppet_arm_left/joint_states"
+
+camera_cfg:
+  camera_names: ["cam_right_wrist", "cam_high", "came_left_wrist"]
+  img_right_topic: "/camera_right/color/image_raw"
+  img_left_topic: "/camera_left/color/image_raw"
+  img_high_topic: "/camera_high/color/image_raw"

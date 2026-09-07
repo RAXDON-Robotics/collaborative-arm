@@ -1,0 +1,15 @@
+name: raxdon_data_collection
+channels:
+  - defaults
+dependencies:
+  - python=3.8.10
+  - pip
+  - pip:
+    - numpy
+    - rospkg
+    - opencv-python
+    - omegaconf
+    - pynput
+    - dm_env
+    - h5py
+    - matplotlib
